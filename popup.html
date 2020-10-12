@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .popup {
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+    </style>
 </head>
 <body>
-<h1>あといくつ寝るとお正月</h1>
+<div>
+    <div id="app">
+        <div class="popup">
+            <p>文字数は<span class="counter">{{wordCount}}</span>です</p>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="popup.js"></script>
 </body>
 </html>
