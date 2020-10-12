@@ -2,15 +2,16 @@
 new Vue({
     el: "#app",
     data: {
-    wordCount: 0
+        wordCount: 0,
+        textCount: ""
     },
     methods: {
-        sayHello(){
-        this.wordCount = 1
+        hoge(){
+            const target = document.getElementsByClassName("mem-name")
+            console.log(target);
         }
     },
     mounted(){
-        this.sayHello()
-
+        this.hoge()
     }
 })

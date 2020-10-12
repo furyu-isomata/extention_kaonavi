@@ -16,7 +16,8 @@
 <div>
     <div id="app">
         <div class="popup">
-            <p>文字数は<span class="counter">{{wordCount}}</span>です</p>
+            <textarea v-model="textCount" id="" cols="30" rows="10"></textarea>
+            <p><span class="counter">{{textCount.length}}</span>文字です</p>
         </div>
     </div>
 

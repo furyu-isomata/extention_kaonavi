@@ -1,15 +1,13 @@
 {
   "manifest_version": 2,
-  "description" : "Base Level Extension",
-  "name": "oshougatsu",
+  "description" : "入力している文字数を調べます",
+  "name": "文字数カウンター",
   "version": "0.1",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": [
-    "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"
-  ],
+  "permissions": ["https://cdn.jsdelivr.net/npm/vue/dist/vue.js","declarativeContent", "storage"],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
   "browser_action": {
     "default_popup": "popup.html",
