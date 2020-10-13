@@ -4,10 +4,4 @@ new Vue({
     data: {
         textCount: ""
     },
-    methods: {
-        }
-    },
-    mounted(){
-        this.hoge()
-    }
 })
