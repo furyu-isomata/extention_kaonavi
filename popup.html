@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        body {
+            width: 400px;
+            height: 200px;
+        }
         .popup {
-            width: 300px;
-            height: 50px;
+            padding: 10px;
             border-radius: 10px;
-
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -16,7 +24,7 @@
 <div>
     <div id="app">
         <div class="popup">
-            <textarea v-model="textCount" id="" cols="30"></textarea>
+            <textarea v-model="textCount" id=""></textarea>
             <p><span class="counter">{{textCount.length}}</span>文字です</p>
         </div>
 

@@ -7,13 +7,15 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": ["https://cdn.jsdelivr.net/npm/vue/dist/vue.js","declarativeContent", "storage"],
+  "icons": {
+    "16": "img/counter.png",
+    "48": "img/counter.png",
+    "128": "img/counter.png"
+  },
+  "permissions": ["https://cdn.jsdelivr.net/npm/vue/dist/vue.js", "activeTab", "declarativeContent", "storage"],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "32": "img/counter.png"
-    }
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
