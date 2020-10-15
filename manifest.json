@@ -3,24 +3,13 @@
   "description" : "入力している文字数を調べます",
   "name": "文字数カウンター",
   "version": "0.1",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "icons": {
     "16": "img/counter.png",
-    "48": "img/counter.png",
     "128": "img/counter.png"
   },
-  "permissions": ["https://cdn.jsdelivr.net/npm/vue/dist/vue.js", "activeTab", "declarativeContent", "storage"],
+  "permissions": ["https://cdn.jsdelivr.net/npm/vue/dist/vue.js"],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'",
   "browser_action": {
     "default_popup": "popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["popup.js"]
-    }
-  ]
+  }
 }
